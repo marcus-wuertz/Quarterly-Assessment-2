@@ -49,3 +49,14 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS AnalyticsCapstone (
                     option4 TEXT,
                     correct_answer TEXT
                 )''')
+
+# Define SQL command to create a table to hold questions for Business Law
+cursor.execute('''CREATE TABLE IF NOT EXISTS BusinessLaw (
+                    id INTEGER PRIMARY KEY,
+                    question TEXT,
+                    option1 TEXT,
+                    option2 TEXT,
+                    option3 TEXT,
+                    option4 TEXT,
+                    correct_answer TEXT
+                )''')
