@@ -17,7 +17,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS BusinessStrategy (
                     correct_answer TEXT
                 )''')
 
-# Define SQL command to create a table to hold questions for Business Application Development
+# Define SQL command to create a table to hold questions for Business Applications Development
 cursor.execute('''CREATE TABLE IF NOT EXISTS BusinessApplications (
                     id INTEGER PRIMARY KEY,
                     question TEXT,
