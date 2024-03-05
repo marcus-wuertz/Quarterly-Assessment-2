@@ -27,3 +27,14 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS BusinessApplications (
                     option4 TEXT,
                     correct_answer TEXT
                 )''')
+
+# Define SQL command to create a table to hold questions for Programming Logic and Analytic Thinking
+cursor.execute('''CREATE TABLE IF NOT EXISTS ProgrammingLogic (
+                    id INTEGER PRIMARY KEY,
+                    question TEXT,
+                    option1 TEXT,
+                    option2 TEXT,
+                    option3 TEXT,
+                    option4 TEXT,
+                    correct_answer TEXT
+                )''')
