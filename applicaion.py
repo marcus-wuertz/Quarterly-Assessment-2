@@ -67,3 +67,13 @@ for question in questions:
     if user_input not in option_mapping:
         print(Fore.RED + "Invalid option! Please choose from A, B, C, or D.")
         continue
+    
+    # Check if the user's input corresponds to the correct answer
+    if option_mapping.get(user_input) == correct_answer.upper():
+        print(Fore.GREEN + "Correct!")
+    else:
+        print(Fore.RED + "Incorrect.")
+        print(f"The correct answer was: {correct_answer}")
+
+# Reset color settings
+print(Fore.RESET)
