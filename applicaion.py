@@ -63,16 +63,26 @@ for question in questions:
     user_input = input("Your answer (A/B/C/D): ").strip().upper()
 
     # Adding an if statement to let users know if their input is invalid
-    if user_input not in option_mapping:
+       # Check if the user's input is a valid option
+    if user_input not in ['A', 'B', 'C', 'D']:
         print(f"{RED}Invalid option! Please choose from A, B, C, or D.{RESET}")
         continue
-    
+
     # Check if the user's input corresponds to the correct answer
-    if option_mapping.get(user_input) == correct_answer.upper():
+    if user_input == 'A':
+        user_answer = option1
+    elif user_input == 'B':
+        user_answer = option2
+    elif user_input == 'C':
+        user_answer = option3
+    elif user_input == 'D':
+        user_answer = option4
+
+    if user_answer == correct_answer:
         print(f"{GREEN}Correct!{RESET}")
     else:
-        print(f"{RED}Incorrect.")
-        print(f"The correct answer was:{RESET} {GREEN}{correct_answer}{RESET}")
+        print(f"{RED}Incorrect.{RESET}")
+        print(f"The correct answer was: {correct_answer}")
 
 # Reset color settings
 print(RESET)
