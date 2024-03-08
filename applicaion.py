@@ -30,7 +30,13 @@ else:
     print("Invalid category selection. Please try again.")
     exit()
 #print(table_name)
-    
+
+# Import necessary libraries to add color to answer response
+from colorama import init, Fore
+
+# Initialize colorama
+init(autoreset=True)
+
 # Fetch questions from the selected category
 cursor.execute(f"SELECT * FROM {table_name}")
 questions = cursor.fetchall()
