@@ -507,3 +507,10 @@ business_law_questions = [
         "correct_answer": "To create legal obligations between parties"
     }
 ]
+
+# for loop to insert questions into the BusinessLaw table
+for question in business_law_questions:
+    cursor.execute('''INSERT INTO BusinessLaw (id, question, option1, option2, option3, option4, correct_answer)
+                      VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
+                                                         question['option2'], question['option3'], question['option4'],
+                                                         question['correct_answer']))
