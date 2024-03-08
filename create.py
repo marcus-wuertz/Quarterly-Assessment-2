@@ -206,3 +206,9 @@ business_app_questions = [
         "correct_answer": "To organize code into separate files for reusability"
     }
 ]
+# for loop to insert questions into the BusinessApplications table
+for question in business_app_questions:
+    cursor.execute('''INSERT INTO BusinessApplications (id, question, option1, option2, option3, option4, correct_answer)
+                      VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
+                                                         question['option2'], question['option3'], question['option4'],
+                                                         question['correct_answer']))
