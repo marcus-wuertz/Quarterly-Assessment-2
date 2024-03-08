@@ -306,3 +306,9 @@ programming_logic_questions = [
         "correct_answer": "Don't Repeat Yourself"
     }
 ]
+# Insert questions into the ProgrammingLogic table
+for question in programming_logic_questions:
+    cursor.execute('''INSERT INTO ProgrammingLogic (id, question, option1, option2, option3, option4, correct_answer)
+                      VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
+                                                         question['option2'], question['option3'], question['option4'],
+                                                         question['correct_answer']))
