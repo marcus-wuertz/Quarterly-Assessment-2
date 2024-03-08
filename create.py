@@ -97,3 +97,9 @@ questions = [
         "correct_answer": "All the above"
     }
 ]
+# Insert questions into the BusinessStrategy table
+for question in questions:
+    cursor.execute('''INSERT INTO BusinessStrategy (id, question, option1, option2, option3, option4, correct_answer)
+                      VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
+                                                         question['option2'], question['option3'], question['option4'],
+                                                         question['correct_answer']))
