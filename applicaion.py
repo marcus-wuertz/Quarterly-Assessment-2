@@ -5,7 +5,7 @@ conn = sqlite3.connect('quiz_bowl.db')
 cursor = conn.cursor()
 
 # Get user input for the category
-user_input = input("Welcome! Please select a category from the following options:\n"
+user_input = input("Welcome to the Quiz Bowl! Please select a category from the following options:\n"
                    "- Business Strategy\n"
                    "- Business Applications\n"
                    "- Programming Logic\n"
@@ -34,3 +34,25 @@ else:
 # Fetch questions from the selected category
 cursor.execute(f"SELECT * FROM {table_name}")
 questions = cursor.fetchall()
+
+# Using a for loop to ask the user all the questions in the table
+for question in questions:
+    id, question, option1, option2, option3, option4, correct_answer = question
+    
+    # Dictionary mapping letter to option text
+    option_mapping = {
+        'A': option1,
+        'B': option2,
+        'C': option3,
+        'D': option4
+    }
+
+    # Present the question and options to the user
+    print(f"Question: {question}")
+    print(f"A. {option1}")
+    print(f"B. {option2}")
+    print(f"C. {option3}")
+    print(f"D. {option4}")
+
+    # Prompt the user for their answer
+    user_input = input("Your answer (A/B/C/D): ").strip().upper()
