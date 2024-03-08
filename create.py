@@ -211,12 +211,12 @@ business_app_questions = [
     }
 ]
 # for loop to insert questions into the BusinessApplications table
-for question in business_app_questions:
-    cursor.execute('''INSERT INTO BusinessApplications (id, question, option1, option2, option3, option4, correct_answer)
-                      VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
-                                                         question['option2'], question['option3'], question['option4'],
-                                                         question['correct_answer']))
-    conn.commit()
+# for question in business_app_questions:
+#     cursor.execute('''INSERT INTO BusinessApplications (id, question, option1, option2, option3, option4, correct_answer)
+#                       VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
+#                                                          question['option2'], question['option3'], question['option4'],
+#                                                          question['correct_answer']))
+#     conn.commit()
 # List of questions for Programming Logic course
 programming_logic_questions = [
     {
@@ -311,12 +311,12 @@ programming_logic_questions = [
     }
 ]
 # Insert questions into the ProgrammingLogic table
-for question in programming_logic_questions:
-    cursor.execute('''INSERT INTO ProgrammingLogic (id, question, option1, option2, option3, option4, correct_answer)
-                      VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
-                                                         question['option2'], question['option3'], question['option4'],
-                                                         question['correct_answer']))
-    conn.commit()
+# for question in programming_logic_questions:
+#     cursor.execute('''INSERT INTO ProgrammingLogic (id, question, option1, option2, option3, option4, correct_answer)
+#                       VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
+#                                                          question['option2'], question['option3'], question['option4'],
+#                                                          question['correct_answer']))
+#     conn.commit()
 
 # List of questions for Business Intelligence and Analytics Capstone course
 bi_analytics_questions = [
@@ -413,12 +413,12 @@ bi_analytics_questions = [
 ]
 
 # use a for loop to insert questions into the AnalyticsCapstone table
-for question in bi_analytics_questions:
-    cursor.execute('''INSERT INTO AnalyticsCapstone (id, question, option1, option2, option3, option4, correct_answer)
-                      VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
-                                                         question['option2'], question['option3'], question['option4'],
-                                                         question['correct_answer']))
-    conn.commit()
+# for question in bi_analytics_questions:
+#     cursor.execute('''INSERT INTO AnalyticsCapstone (id, question, option1, option2, option3, option4, correct_answer)
+#                       VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
+#                                                          question['option2'], question['option3'], question['option4'],
+#                                                          question['correct_answer']))
+#     conn.commit()
 
 # List of questions for Business Law course
 business_law_questions = [
@@ -515,12 +515,12 @@ business_law_questions = [
 ]
 
 # for loop to insert questions into the BusinessLaw table
-for question in business_law_questions:
-    cursor.execute('''INSERT INTO BusinessLaw (id, question, option1, option2, option3, option4, correct_answer)
-                      VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
-                                                         question['option2'], question['option3'], question['option4'],
-                                                         question['correct_answer']))
-    conn.commit()
+# for question in business_law_questions:
+#     cursor.execute('''INSERT INTO BusinessLaw (id, question, option1, option2, option3, option4, correct_answer)
+#                       VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
+#                                                          question['option2'], question['option3'], question['option4'],
+#                                                          question['correct_answer']))
+#     conn.commit()
 #Fetch and display data from each table
 tables = ['BusinessStrategy', 'BusinessApplications', 'ProgrammingLogic', 'AnalyticsCapstone', 'BusinessLaw']
 for table in tables:
