@@ -413,3 +413,97 @@ for question in bi_analytics_questions:
                       VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
                                                          question['option2'], question['option3'], question['option4'],
                                                          question['correct_answer']))
+
+# List of questions for Business Law course
+business_law_questions = [
+    {
+        "id": 1,
+        "question": "What is the primary purpose of court jurisdiction?",
+        "option1": "To decide which judge will preside over the case",
+        "option2": "To determine the geographical area where a court has authority",
+        "option3": "To establish the legal precedents for a case",
+        "option4": "To issue arrest warrants",
+        "correct_answer": "To determine the geographical area where a court has authority"
+    },
+    {
+        "id": 2,
+        "question": "What is a complaint in the legal context?",
+        "option1": "A formal charge or allegation against a defendant",
+        "option2": "A request for a jury trial",
+        "option3": "A motion to dismiss a case",
+        "option4": "A settlement agreement",
+        "correct_answer": "A formal charge or allegation against a defendant"
+    },
+    {
+        "id": 3,
+        "question": "What is the process of litigation?",
+        "option1": "The resolution of legal disputes through negotiation",
+        "option2": "The formal process of taking legal action and resolving disputes in court",
+        "option3": "The process of arbitration",
+        "option4": "The process of mediation",
+        "correct_answer": "The formal process of taking legal action and resolving disputes in court"
+    },
+    {
+        "id": 4,
+        "question": "What is arbitration?",
+        "option1": "A form of alternative dispute resolution where a neutral third party makes a binding decision",
+        "option2": "A court hearing for small claims cases",
+        "option3": "A pretrial conference between attorneys and the judge",
+        "option4": "A legal remedy for breach of contract",
+        "correct_answer": "A form of alternative dispute resolution where a neutral third party makes a binding decision"
+    },
+    {
+        "id": 5,
+        "question": "What is employment law primarily concerned with?",
+        "option1": "Protecting the rights of employers",
+        "option2": "Regulating the hiring process",
+        "option3": "Protecting the rights of employees",
+        "option4": "Setting minimum wage rates",
+        "correct_answer": "Protecting the rights of employees"
+    },
+    {
+        "id": 6,
+        "question": "What is the purpose of a non-compete agreement?",
+        "option1": "To prevent employees from disclosing confidential information",
+        "option2": "To restrict employees from working for a competitor after leaving the company",
+        "option3": "To provide employees with job security",
+        "option4": "To ensure equal pay for equal work",
+        "correct_answer": "To restrict employees from working for a competitor after leaving the company"
+    },
+    {
+        "id": 7,
+        "question": "What does the term 'at-will employment' mean?",
+        "option1": "Employment that is guaranteed for a fixed period of time",
+        "option2": "Employment that can be terminated by either the employer or employee at any time, with or without cause",
+        "option3": "Employment that requires approval from a labor union",
+        "option4": "Employment that is based on a commission structure",
+        "correct_answer": "Employment that can be terminated by either the employer or employee at any time, with or without cause"
+    },
+    {
+        "id": 8,
+        "question": "What is the purpose of the Fair Labor Standards Act (FLSA)?",
+        "option1": "To regulate workplace safety standards",
+        "option2": "To prohibit discrimination in employment",
+        "option3": "To establish minimum wage, overtime pay, recordkeeping, and youth employment standards",
+        "option4": "To provide employees with paid vacation time",
+        "correct_answer": "To establish minimum wage, overtime pay, recordkeeping, and youth employment standards"
+    },
+    {
+        "id": 9,
+        "question": "What is the main goal of intellectual property law?",
+        "option1": "To protect the rights of employees",
+        "option2": "To regulate workplace safety standards",
+        "option3": "To prevent the unauthorized use or exploitation of creative works and inventions",
+        "option4": "To establish minimum wage rates",
+        "correct_answer": "To prevent the unauthorized use or exploitation of creative works and inventions"
+    },
+    {
+        "id": 10,
+        "question": "What is the primary purpose of a contract?",
+        "option1": "To create legal obligations between parties",
+        "option2": "To establish workplace policies",
+        "option3": "To provide employees with job security",
+        "option4": "To regulate workplace safety standards",
+        "correct_answer": "To create legal obligations between parties"
+    }
+]
