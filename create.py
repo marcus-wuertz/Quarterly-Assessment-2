@@ -522,11 +522,32 @@ business_law_questions = [
 #                                                          question['correct_answer']))
 #     conn.commit()
 #Fetch and display data from each table
-tables = ['BusinessStrategy', 'BusinessApplications', 'ProgrammingLogic', 'AnalyticsCapstone', 'BusinessLaw']
-for table in tables:
-    cursor.execute(f"SELECT * FROM {table}")
-    rows = cursor.fetchall()
-    print(f"Contents of {table} table:")
-    for row in rows:
-        print(row)
-    print()
+# tables = ['BusinessStrategy', 'BusinessApplications', 'ProgrammingLogic', 'AnalyticsCapstone', 'BusinessLaw']
+# for table in tables:
+#     cursor.execute(f"SELECT * FROM {table}")
+#     rows = cursor.fetchall()
+#     print(f"Contents of {table} table:")
+#     for row in rows:
+#         print(row)
+#     print()
+
+def add_new_question(table, id, question, option1, option2, option3, option4, correct_answer):
+    try:
+        # Connect to the database
+        conn = sqlite3.connect('quiz_bowl.db')
+        cursor = conn.cursor()
+
+        # Insert the new question into the specified category table(add 1 to previous id )
+        cursor.execute(f"INSERT INTO {table} (id, question, option1, option2, option3, option4, correct_answer) "
+                       "VALUES (?, ?, ?, ?, ?, ?, ?)",
+                       (id, question, option1, option2, option3, option4, correct_answer))
+        
+        # Commit the changes and close the connection
+        conn.commit()
+        conn.close()
+        
+        print("New question added successfully!")
+
+    except sqlite3.Error as error:
+        print("Error adding new question:", error)
+add_new_question('BusinessStrategy',11,'What general strategy targets a specific subset of a market and focuses on uniqueness?','Cost Leadership','Focused Cost Leadership','Differentiation','Focused Differentiation','Focused Differentiation')
