@@ -92,3 +92,5 @@ CategoryQuestions()
 another_category=input(f"Another category? (Y/N):").strip().upper().replace(" ","")
 if another_category =="Y":
     CategoryQuestions()
+else :
+    print('Maybe next time, Goodbye!')
