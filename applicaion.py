@@ -14,3 +14,19 @@ user_input = input("Welcome! Please select a category from the following options
                    "Your choice: ").strip().lower().replace(" ", "")
 
 #print(user_input)
+
+# Define the database table based on the user input
+if user_input == 'businessstrategy':
+    table_name = 'BusinessStrategy'
+elif user_input == 'businessapplications':
+    table_name = 'BusinessApplications'
+elif user_input == 'programminglogic':
+    table_name = 'ProgrammingLogic'
+elif user_input == 'analyticscapstone':
+    table_name = 'AnalyticsCapstone'
+elif user_input == 'businesslaw':
+    table_name = 'BusinessLaw'
+else:
+    print("Invalid category selection. Please try again.")
+    exit()
+#print(table_name)
