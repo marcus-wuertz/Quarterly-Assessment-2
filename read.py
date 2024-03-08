@@ -7,6 +7,9 @@ cursor = conn.cursor()
 # Fetch and display data from each table
 tables = ['BusinessStrategy', 'BusinessApplications', 'ProgrammingLogic', 'AnalyticsCapstone', 'BusinessLaw']
 for table in tables:
+    col_names=['id', 'question','option1','option2','option3','option4','correct_answer']
+    print('column names:')
+    print(col_names)
     cursor.execute(f"SELECT * FROM {table}")
     rows = cursor.fetchall()
     print(f"Contents of {table} table:")
