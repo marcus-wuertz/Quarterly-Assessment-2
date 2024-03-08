@@ -406,3 +406,10 @@ bi_analytics_questions = [
         "correct_answer": "To summarize and interpret data"
     }
 ]
+
+# use a for loop to insert questions into the AnalyticsCapstone table
+for question in bi_analytics_questions:
+    cursor.execute('''INSERT INTO AnalyticsCapstone (id, question, option1, option2, option3, option4, correct_answer)
+                      VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
+                                                         question['option2'], question['option3'], question['option4'],
+                                                         question['correct_answer']))
