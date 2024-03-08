@@ -212,3 +212,97 @@ for question in business_app_questions:
                       VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
                                                          question['option2'], question['option3'], question['option4'],
                                                          question['correct_answer']))
+
+# List of questions for Programming Logic course
+programming_logic_questions = [
+    {
+        "id": 1,
+        "question": "What is the primary purpose of using version control systems like GitHub?",
+        "option1": "To manage database transactions",
+        "option2": "To track changes in code and collaborate with others",
+        "option3": "To analyze user behavior on websites",
+        "option4": "To design user interfaces for web applications",
+        "correct_answer": "To track changes in code and collaborate with others"
+    },
+    {
+        "id": 2,
+        "question": "Which programming language is widely used for web development and data analysis?",
+        "option1": "Java",
+        "option2": "C++",
+        "option3": "Python",
+        "option4": "Ruby",
+        "correct_answer": "Python"
+    },
+    {
+        "id": 3,
+        "question": "What is the purpose of using Wix in web development?",
+        "option1": "To write server-side code",
+        "option2": "To create and design websites without coding",
+        "option3": "To manage databases",
+        "option4": "To perform data analysis",
+        "correct_answer": "To create and design websites without coding"
+    },
+    {
+        "id": 4,
+        "question": "Which of the following is an important skill for professionalism in the workplace?",
+        "option1": "Adaptability",
+        "option2": "Ignoring feedback",
+        "option3": "Avoiding teamwork",
+        "option4": "Isolation",
+        "correct_answer": "Adaptability"
+    },
+    {
+        "id": 5,
+        "question": "What is the primary goal of critical thinking in problem-solving?",
+        "option1": "To follow predefined rules",
+        "option2": "To analyze situations and make informed decisions",
+        "option3": "To avoid challenges",
+        "option4": "To repeat previous mistakes",
+        "correct_answer": "To analyze situations and make informed decisions"
+    },
+    {
+        "id": 6,
+        "question": "What does a personal SWOT analysis aim to identify?",
+        "option1": "Strengths, weaknesses, opportunities, and threats",
+        "option2": "Software development techniques",
+        "option3": "Systematic web operations training",
+        "option4": "Server-side web optimization tactics",
+        "correct_answer": "Strengths, weaknesses, opportunities, and threats"
+    },
+    {
+        "id": 7,
+        "question": "Which of the following is NOT a benefit of effective communication in the workplace?",
+        "option1": "Improved teamwork",
+        "option2": "Increased productivity",
+        "option3": "Confusion and misunderstandings",
+        "option4": "Enhanced collaboration",
+        "correct_answer": "Confusion and misunderstandings"
+    },
+    {
+        "id": 8,
+        "question": "What is the significance of algorithmic thinking in programming?",
+        "option1": "To write code quickly without planning",
+        "option2": "To solve problems efficiently and logically",
+        "option3": "To rely solely on trial and error",
+        "option4": "To ignore best practices",
+        "correct_answer": "To solve problems efficiently and logically"
+    },
+    {
+        "id": 9,
+        "question": "What role does creativity play in software development?",
+        "option1": "It is not relevant",
+        "option2": "It is only important for graphic design",
+        "option3": "It fuels innovation and problem-solving",
+        "option4": "It is only important for marketing",
+        "correct_answer": "It fuels innovation and problem-solving"
+    },
+    {
+        "id": 10,
+        "question": "What does the 'DRY' principle in programming stand for?",
+        "option1": "Don't Repeat Yourself",
+        "option2": "Do Repeat Yourself",
+        "option3": "Don't Run Yourself",
+        "option4": "Do Run Yourself",
+        "correct_answer": "Don't Repeat Yourself"
+    }
+]
