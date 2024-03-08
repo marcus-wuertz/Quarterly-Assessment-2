@@ -112,3 +112,97 @@ for question in questions:
 # Print the fetched rows
 #for row in rows:
 #    print(row)
+
+# List of questions for Business Applications Development course
+business_app_questions = [
+    {
+        "id": 1,
+        "question": "What is the purpose of using generative AI in software development?",
+        "option1": "To automate testing processes",
+        "option2": "To generate code automatically",
+        "option3": "To design user interfaces",
+        "option4": "To analyze user behavior",
+        "correct_answer": "To generate code automatically"
+    },
+    {
+        "id": 2,
+        "question": "Which Python control structure is typically used to iterate over a sequence of elements?",
+        "option1": "if-else statement",
+        "option2": "for loop",
+        "option3": "while loop",
+        "option4": "try-except block",
+        "correct_answer": "for loop"
+    },
+    {
+        "id": 3,
+        "question": "What is the purpose of using dictionaries in Python?",
+        "option1": "To store ordered data",
+        "option2": "To store data in key-value pairs",
+        "option3": "To store only numeric data",
+        "option4": "To perform mathematical operations",
+        "correct_answer": "To store data in key-value pairs"
+    },
+    {
+        "id": 4,
+        "question": "What is the primary purpose of using functions in programming?",
+        "option1": "To repeat a block of code",
+        "option2": "To organize code into reusable units",
+        "option3": "To display output on the screen",
+        "option4": "To handle errors and exceptions",
+        "correct_answer": "To organize code into reusable units"
+    },
+    {
+        "id": 5,
+        "question": "What is the purpose of using databases in software development?",
+        "option1": "To improve user interface design",
+        "option2": "To perform mathematical calculations",
+        "option3": "To store and manage data persistently",
+        "option4": "To generate random numbers",
+        "correct_answer": "To store and manage data persistently"
+    },
+    {
+        "id": 6,
+        "question": "Which Python statement is used to catch and handle exceptions?",
+        "option1": "try-except",
+        "option2": "if-else",
+        "option3": "for",
+        "option4": "while",
+        "correct_answer": "try-except"
+    },
+    {
+        "id": 7,
+        "question": "What does the term 'IDE' stand for in software development?",
+        "option1": "Integrated Development Environment",
+        "option2": "Interpreted Development Environment",
+        "option3": "Interactive Design Environment",
+        "option4": "Innovative Development Engine",
+        "correct_answer": "Integrated Development Environment"
+    },
+    {
+        "id": 8,
+        "question": "What is the purpose of a while loop in Python?",
+        "option1": "To execute a block of code a fixed number of times",
+        "option2": "To iterate over a sequence of elements",
+        "option3": "To execute a block of code indefinitely until a condition is met",
+        "option4": "To handle errors and exceptions",
+        "correct_answer": "To execute a block of code indefinitely until a condition is met"
+    },
+    {
+        "id": 9,
+        "question": "Which data structure in Python is used to represent a collection of elements with unique keys?",
+        "option1": "List",
+        "option2": "Tuple",
+        "option3": "Set",
+        "option4": "Dictionary",
+        "correct_answer": "Dictionary"
+    },
+    {
+        "id": 10,
+        "question": "What is the purpose of using modules in Python?",
+        "option1": "To store and manage data",
+        "option2": "To perform mathematical operations",
+        "option3": "To organize code into separate files for reusability",
+        "option4": "To handle errors and exceptions",
+        "correct_answer": "To organize code into separate files for reusability"
+    }
+]
