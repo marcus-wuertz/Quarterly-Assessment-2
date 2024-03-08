@@ -312,3 +312,97 @@ for question in programming_logic_questions:
                       VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
                                                          question['option2'], question['option3'], question['option4'],
                                                          question['correct_answer']))
+
+# List of questions for Business Intelligence and Analytics Capstone course
+bi_analytics_questions = [
+    {
+        "id": 1,
+        "question": "What is the primary purpose of using Python in Google Colab?",
+        "option1": "To create business presentations",
+        "option2": "To analyze data and create models",
+        "option3": "To design user interfaces",
+        "option4": "To generate random numbers",
+        "correct_answer": "To analyze data and create models"
+    },
+    {
+        "id": 2,
+        "question": "Which regression technique is used to estimate the relationship between variables when the data has outliers?",
+        "option1": "Quantile regression",
+        "option2": "LASSO regression",
+        "option3": "Linear regression",
+        "option4": "Logistic regression",
+        "correct_answer": "Quantile regression"
+    },
+    {
+        "id": 3,
+        "question": "What is the purpose of data cleaning in analytics?",
+        "option1": "To make the data look better",
+        "option2": "To remove outliers and errors from the data",
+        "option3": "To add noise to the data",
+        "option4": "To decrease data quality",
+        "correct_answer": "To remove outliers and errors from the data"
+    },
+    {
+        "id": 4,
+        "question": "What does data standardization aim to achieve?",
+        "option1": "To make the data less consistent",
+        "option2": "To increase data variability",
+        "option3": "To transform data into a standard format",
+        "option4": "To add noise to the data",
+        "correct_answer": "To transform data into a standard format"
+    },
+    {
+        "id": 5,
+        "question": "Which type of data visualization is commonly used to display correlations between variables?",
+        "option1": "Heatmaps",
+        "option2": "Barplots",
+        "option3": "Pie charts",
+        "option4": "Line graphs",
+        "correct_answer": "Heatmaps"
+    },
+    {
+        "id": 6,
+        "question": "What statistical technique is used to analyze the relationship between two continuous variables?",
+        "option1": "T-test",
+        "option2": "ANOVA",
+        "option3": "Linear regression",
+        "option4": "Chi-square test",
+        "correct_answer": "Linear regression"
+    },
+    {
+        "id": 7,
+        "question": "What is the purpose of a client presentation in the capstone project?",
+        "option1": "To present data in a visually appealing way",
+        "option2": "To answer a business-related question using data and analysis",
+        "option3": "To demonstrate proficiency in Python programming",
+        "option4": "To generate random data",
+        "correct_answer": "To answer a business-related question using data and analysis"
+    },
+    {
+        "id": 8,
+        "question": "What is the main goal of linear regression analysis?",
+        "option1": "To predict categorical outcomes",
+        "option2": "To estimate the relationship between dependent and independent variables",
+        "option3": "To analyze variance in a dataset",
+        "option4": "To perform hypothesis testing",
+        "correct_answer": "To estimate the relationship between dependent and independent variables"
+    },
+    {
+        "id": 9,
+        "question": "What type of data is suitable for logistic regression analysis?",
+        "option1": "Continuous data",
+        "option2": "Categorical data",
+        "option3": "Ordinal data",
+        "option4": "Nominal data",
+        "correct_answer": "Categorical data"
+    },
+    {
+        "id": 10,
+        "question": "What is the primary objective of a statistical model?",
+        "option1": "To make data analysis more complex",
+        "option2": "To summarize and interpret data",
+        "option3": "To generate random numbers",
+        "option4": "To remove outliers from the data",
+        "correct_answer": "To summarize and interpret data"
+    }
+]
