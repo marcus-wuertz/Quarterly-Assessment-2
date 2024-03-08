@@ -514,12 +514,12 @@ for question in business_law_questions:
                       VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
                                                          question['option2'], question['option3'], question['option4'],
                                                          question['correct_answer']))
-# Fetch and display data from each table
-#tables = ['BusinessStrategy', 'BusinessApplications', 'ProgrammingLogic', 'AnalyticsCapstone', 'BusinessLaw']
-#for table in tables:
-#    cursor.execute(f"SELECT * FROM {table}")
-#    rows = cursor.fetchall()
-#    print(f"Contents of {table} table:")
-#    for row in rows:
-#        print(row)
-#    print()
+#Fetch and display data from each table
+tables = ['BusinessStrategy', 'BusinessApplications', 'ProgrammingLogic', 'AnalyticsCapstone', 'BusinessLaw']
+for table in tables:
+    cursor.execute(f"SELECT * FROM {table}")
+    rows = cursor.fetchall()
+    print(f"Contents of {table} table:")
+    for row in rows:
+        print(row)
+    print()
