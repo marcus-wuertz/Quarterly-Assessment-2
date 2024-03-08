@@ -31,11 +31,10 @@ else:
     exit()
 #print(table_name)
 
-# Import necessary libraries to add color to answer response
-from colorama import init, Fore
-
-# Initialize colorama
-init(autoreset=True)
+# ANSI escape codes for text colors
+GREEN = '\033[92m'  # Green color
+RED = '\033[91m'    # Red color
+RESET = '\033[0m'    # Reset color
 
 # Fetch questions from the selected category
 cursor.execute(f"SELECT * FROM {table_name}")
@@ -65,15 +64,15 @@ for question in questions:
 
     # Adding an if statement to let users know if their input is invalid
     if user_input not in option_mapping:
-        print(Fore.RED + "Invalid option! Please choose from A, B, C, or D.")
+        print(f"{RED}Invalid option! Please choose from A, B, C, or D.{RESET}")
         continue
     
     # Check if the user's input corresponds to the correct answer
     if option_mapping.get(user_input) == correct_answer.upper():
-        print(Fore.GREEN + "Correct!")
+        print(f"{GREEN}Correct!{RESET}")
     else:
-        print(Fore.RED + "Incorrect.")
-        print(f"The correct answer was: {correct_answer}")
+        print(f"{RED}Incorrect.")
+        print(f"The correct answer was:{RESET} {GREEN}{correct_answer}{RESET}")
 
 # Reset color settings
-print(Fore.RESET)
+print(RESET)
