@@ -36,6 +36,9 @@ GREEN = '\033[92m'  # Green color
 RED = '\033[91m'    # Red color
 RESET = '\033[0m'    # Reset color
 
+# Initialize a variable to track the number of correct answers
+correct_count = 0
+
 # Fetch questions from the selected category
 cursor.execute(f"SELECT * FROM {table_name}")
 questions = cursor.fetchall()
@@ -43,14 +46,6 @@ questions = cursor.fetchall()
 # Using a for loop to ask the user all the questions in the table
 for question in questions:
     id, question, option1, option2, option3, option4, correct_answer = question
-    
-    # Dictionary mapping letter to option text
-    option_mapping = {
-        'A': option1,
-        'B': option2,
-        'C': option3,
-        'D': option4
-    }
 
     # Present the question and options to the user
     print(f"Question: {question}")
@@ -80,9 +75,13 @@ for question in questions:
 
     if user_answer == correct_answer:
         print(f"{GREEN}Correct!{RESET}")
+        correct_count += 1
     else:
         print(f"{RED}Incorrect.{RESET}")
         print(f"The correct answer was: {correct_answer}")
+
+# Display the total number of correct answers
+print(f"\nYou answered {correct_count} out of {len(questions)} questions correctly.")
 
 # Reset color settings
 print(RESET)
