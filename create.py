@@ -103,3 +103,12 @@ for question in questions:
                       VALUES (?, ?, ?, ?, ?, ?, ?)''', (question['id'], question['question'], question['option1'],
                                                          question['option2'], question['option3'], question['option4'],
                                                          question['correct_answer']))
+# use select query to check if your data properly populated the table
+#cursor.execute('''SELECT * FROM BusinessStrategy''')
+
+# Fetch all rows from the result set
+#rows = cursor.fetchall()
+
+# Print the fetched rows
+#for row in rows:
+#    print(row)
