@@ -62,3 +62,8 @@ for question in questions:
 
     # Prompt the user for their answer
     user_input = input("Your answer (A/B/C/D): ").strip().upper()
+
+    # Adding an if statement to let users know if their input is invalid
+    if user_input not in option_mapping:
+        print(Fore.RED + "Invalid option! Please choose from A, B, C, or D.")
+        continue
