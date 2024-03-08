@@ -27,6 +27,12 @@ This document clearly outlines different instructions for those attempting to us
 -Programmers should not need to alter the code, UNLESS they added another table into the database, in which case you'll need to insert it into the 'tables' variable
 
 # application.py
--This is the ONLY file users are required to run to use the quiz bowl application
+## This is the ONLY file users are required to run to use the quiz bowl application
 -Users should interact with the terminal, NOT the code itself
+-Users simply need to run the file, and follow the directions in the terminal. 
+-Users will be prompted to select a category (as long as it's spelled correctly it will work regardless of capitalization or spelling)
+-Then, youll see a question followed by multiple choice options
+-Your answers should be either A, B, C, or D, and the program will tell you if you are correct
+-After you've answered all the questions in the table, youll see your total score, and will be asked if you'd like questions from another category
+-Programmers should also exclusively interact with the terminal UNLESS they added another table, in which case they should include the table(s) in the 'user_input' and the following if statement
 
