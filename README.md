@@ -16,8 +16,10 @@ This document clearly outlines different instructions for those attempting to us
 -Programmers should interact with this file ONLY to add more questions into our database
 -Programmers should NOT add another dictionary to the list and run the for loop
 -That would add duplicate data into the database
--To add new questions, use the 'add_question' function
--Make sure your data is formatted correctly (match to the column names from the table)
+-To add new questions, use the 'add_new_question' function
+-I have provided an example of how to use the function, just call it and put the values in 
+-Make sure your data is formatted correctly 
+-The function will tell you whether or not your data populated the database
 -Run the read.py file to see the format of columns, as well as the data in the tables
 
 # read.py
@@ -35,4 +37,4 @@ This document clearly outlines different instructions for those attempting to us
 -Your answers should be either A, B, C, or D, and the program will tell you if you are correct
 -After you've answered all the questions in the table, youll see your total score, and will be asked if you'd like questions from another category
 -Programmers should also exclusively interact with the terminal UNLESS they added another table, in which case they should include the table(s) in the 'user_input' and the following if statement
-
+-If you added a question into a preexisting table, there is no need to alter the code on this file
