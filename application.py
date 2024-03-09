@@ -89,8 +89,13 @@ def CategoryQuestions():
 CategoryQuestions()
 
 #ask the user if they want more questions
-another_category=input(f"Another category? (Y/N):").strip().upper().replace(" ","")
-if another_category =="Y":
-    CategoryQuestions()
-else :
-    print('Maybe next time, Goodbye!')
+while True:
+    another_category = input("Another category? (Y/N): ").strip().upper().replace(" ", "")
+    
+    if another_category == "N":
+        print('Maybe next time. Goodbye!')
+        break
+    elif another_category == "Y":
+        CategoryQuestions()
+    else:
+        print("Invalid input. Please enter 'Y' or 'N'.")
