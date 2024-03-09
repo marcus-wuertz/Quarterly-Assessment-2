@@ -40,6 +40,6 @@ This document clearly outlines different instructions for those attempting to us
 -Users will be prompted to select a category (as long as it's spelled correctly it will work regardless of capitalization or spelling)  
 -Then, youll see a question followed by multiple choice options  
 -Your answers should be either 'A', 'B', 'C', or 'D', and the program will tell you if you are correct  
--After you've answered all the questions in the table, you'll see your score, and it will asked if you'd like questions more questions from another category  
+-After you've answered all the questions in the table, you'll see your score, and it will asked if you'd like more questions from another category  
 -If you want more questions, type 'y', otherwise, type 'n' (capitalization and spaces won't matter)  
 
