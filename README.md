@@ -33,6 +33,7 @@ This document clearly outlines different instructions for those attempting to us
 
 # application.py
 ## This is the ONLY file users are required to run to use the quiz bowl application
+-This file is designed to run a quiz bowl on a series of questions from a variety of topics stored in a database  
 -Users should interact exclusively with the terminal, NOT the code itself  
 -Programmers should also exclusively interact with the terminal UNLESS they added another table, in which case they should include the table(s) in the 'user_input' and the following if statement  
 ## If you added a question into a preexisting table, there is no need to alter the code on this file
